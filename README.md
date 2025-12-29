@@ -1,5 +1,7 @@
 # Mapping Rice Affordability in Ghana Using GeoAI
 
+![Workshop Banner](images/workshop-banner.png)
+
 **GAIN Monthly Dialogue Session – March 2026**  
 Created by Chantelle Amoako-Atta, AI/ML Engineer and PhD Researcher (Decarb-AI, UCD)
 
@@ -14,6 +16,12 @@ This repository contains materials for a 2-hour hands-on GeoAI workshop that use
 - Build choropleth maps showing regional and district-level patterns
 - Identify and interpret data gaps
 - Develop a natural language interface using Large Language Models (LLMs)
+
+### Workshop Workflow
+
+![Analysis Workflow](images/workflow-diagram.png)
+
+*This workshop takes you from raw market data to interactive spatial analysis in six steps.*
 
 
 
@@ -34,7 +42,7 @@ By the end of this workshop, participants will be able to:
 ## Repository Structure
 
 ```
-gain_geoai_workshop/
+geoai-rice-affordability-ghana/
 ├── README.md                          # This file
 ├── data/                              # Data files (see Data Sources section)
 │   ├── wfp_food_prices_gha.csv       # WFP Ghana food prices
@@ -65,8 +73,8 @@ gain_geoai_workshop/
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/chantelleaa/gain_geoai_workshop.git
-   cd gain_geoai_workshop
+   git clone https://github.com/yourusername/geoai-rice-affordability-ghana.git
+   cd geoai-rice-affordability-ghana
    ```
 
 2. **Create a virtual environment (recommended):**
@@ -93,6 +101,12 @@ gain_geoai_workshop/
 
 
 ## Data Sources
+
+### Geographic Context
+
+![Ghana Administrative Regions](images/ghana-context-map.png)
+
+*Ghana's administrative regions and major cities where WFP monitors market prices.*
 
 ### WFP Food Prices for Ghana
 - **Source:** World Food Programme via Humanitarian Data Exchange (HDX)
@@ -128,6 +142,12 @@ gain_geoai_workshop/
 
 
 ## Technical Requirements
+
+### Technology Stack
+
+![Technology Stack](images/tech-stack.png)
+
+*The workshop uses a layered architecture: Gradio for the interface, Python and GeoPandas for analysis, and WFP data as the foundation.*
 
 ### Python Libraries
 - **pandas** (2.0+): Data manipulation
@@ -167,16 +187,28 @@ pip install -r requirements.txt
 Using artificial intelligence and geographic data together to answer location-specific questions.
 
 ### Spatial Join
-Connecting data points to geographic regions based on their coordinates.
+
+![Data Transformation](images/table-to-map.png)
+
+*Converting tabular market data with coordinates into spatial points on a map through GeoDataFrame creation.*
 
 ### Choropleth Map
-A map where areas are colored based on data values (e.g., median price).
+
+![Regional Rice Prices](images/regional-map-example.png)
+
+*Example choropleth map showing median rice prices across Ghana's regions. Color coding reveals spatial affordability patterns: green indicates more affordable areas, while red shows regions with higher prices.*
 
 ### Data Gaps
-Understanding that missing data reflects monitoring coverage, not absence of issues.
+
+![District Level Analysis](images/district-map-example.png)
+
+*District-level analysis reveals both price patterns and data coverage gaps. Colored districts have sufficient market observations, while gray outlined districts lack data, highlighting areas where monitoring could be expanded.*
 
 ### LLM for Explanation
-Using Large Language Models to generate natural language explanations of quantitative results computed by Python.
+
+![Natural Language Query Interface](images/gradio-interface.png)
+
+*The workshop includes building an interactive Gradio interface that allows users to query rice price data using natural language. Python handles all computations while the LLM generates human-friendly explanations.*
 
 
 
