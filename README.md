@@ -293,11 +293,5 @@ GAIN Monthly Dialogue Session Workshop Materials.
 
 ---
 
-## About GAIN
-
-The Global Alliance for Improved Nutrition (GAIN) is a Swiss-based foundation launched at the UN in 2002 to tackle the human suffering caused by malnutrition. GAIN's Monthly Dialogue Sessions provide a platform for knowledge sharing and capacity building.
-
----
-
 **Last Updated:** December 2025  
 **Workshop Date:** March 2026
