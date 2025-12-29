@@ -5,7 +5,7 @@
 **GAIN Monthly Dialogue Session – March 2026**  
 Created by Chantelle Amoako-Atta, AI/ML Engineer and PhD Researcher (Decarb-AI, UCD)
 
-
+---
 
 ## Overview
 
@@ -23,7 +23,7 @@ This repository contains materials for a 2-hour hands-on GeoAI workshop that use
 
 *This workshop takes you from raw market data to interactive spatial analysis in six steps.*
 
-
+---
 
 ## Learning Outcomes
 
@@ -37,13 +37,22 @@ By the end of this workshop, participants will be able to:
 6. Identify data gaps and understand their policy implications
 7. Build a natural language interface for querying spatial analysis
 
-
+---
 
 ## Repository Structure
 
 ```
-geoai-rice-affordability-ghana/
+gain_geoai_workshop/
 ├── README.md                          # This file
+├── images/                            # Images for README
+│   ├── workshop-banner.png
+│   ├── workflow-diagram.png
+│   ├── regional-map-example.png
+│   ├── district-map-example.png
+│   ├── ghana-context-map.png
+│   ├── table-to-map.png
+│   ├── tech-stack.png
+│   └── gradio-interface.png
 ├── data/                              # Data files (see Data Sources section)
 │   ├── wfp_food_prices_gha.csv       # WFP Ghana food prices
 │   ├── geoBoundaries-GHA-ADM1.geojson # Regional boundaries
@@ -56,10 +65,11 @@ geoai-rice-affordability-ghana/
 │   ├── instructor_notes.md            # Teaching guide for instructors
 │   ├── student_handout.md             # Student reference guide
 │   └── quick_start.md                 # Pre-workshop setup instructions
-└── requirements.txt                    # Python dependencies
+├── requirements.txt                   # Python dependencies
+└── generate_ghana_maps.py             # Script to generate map images
 ```
 
-
+---
 
 ## Getting Started
 
@@ -73,8 +83,8 @@ geoai-rice-affordability-ghana/
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/yourusername/geoai-rice-affordability-ghana.git
-   cd geoai-rice-affordability-ghana
+   git clone https://github.com/chantelleaa/gain_geoai_workshop.git
+   cd gain_geoai_workshop
    ```
 
 2. **Create a virtual environment (recommended):**
@@ -98,7 +108,7 @@ geoai-rice-affordability-ghana/
 6. **Open the workshop notebook:**
    Navigate to `notebooks/complete_workshop_notebook.ipynb`
 
-
+---
 
 ## Data Sources
 
@@ -126,7 +136,7 @@ geoai-rice-affordability-ghana/
 
 **Note:** Data files are not included in this repository due to size. Please download them from the sources above.
 
-
+---
 
 ## Workshop Materials
 
@@ -139,7 +149,7 @@ geoai-rice-affordability-ghana/
 - **Instructor Notes** (`docs/instructor_notes.md`): Detailed teaching plan with timing, engagement strategies, and troubleshooting
 - **Presentation Slides** (`slides/GeoAI_Workshop_Slides.pptx`): Use to introduce the workshop
 
-
+---
 
 ## Technical Requirements
 
@@ -166,12 +176,12 @@ pip install -r requirements.txt
 - API access to an LLM service (e.g., OpenAI, Anthropic)
 - Or use the deterministic Python-only fallback provided in the notebook
 
-
+---
 
 ## Workshop Agenda (2 Hours)
 
 | Time | Activity | Description |
-||-|-|
+|------|----------|-------------|
 | 0–10 min | Introduction | Context, WFP background, learning outcomes |
 | 10–30 min | Data Loading | Explore datasets, filter rice, validate coordinates |
 | 30–55 min | Regional Analysis | Create GeoDataFrame, spatial joins, ADM1 choropleth |
@@ -210,7 +220,7 @@ Using artificial intelligence and geographic data together to answer location-sp
 
 *The workshop includes building an interactive Gradio interface that allows users to query rice price data using natural language. Python handles all computations while the LLM generates human-friendly explanations.*
 
-
+---
 
 ## Extension Ideas
 
@@ -223,7 +233,7 @@ After completing the workshop, consider these extensions:
 5. **Deploy publicly:** Share Gradio app via Hugging Face Spaces
 6. **Build a dashboard:** Use Streamlit or Dash for interactive exploration
 
-
+---
 
 ## Additional Resources
 
@@ -238,7 +248,7 @@ After completing the workshop, consider these extensions:
 - [Spatial Data Science](https://rspatial.org/)
 - [GeoAI and Machine Learning for Spatial Data](https://www.esri.com/en-us/arcgis/products/geoai)
 
-
+---
 
 ## Contributing
 
@@ -250,7 +260,7 @@ Contributions are welcome! If you find issues or have suggestions for improvemen
 4. Push to the branch (`git push origin feature/improvement`)
 5. Open a Pull Request
 
-
+---
 
 ## Contact
 
@@ -260,7 +270,7 @@ Decarb-AI, University College Dublin (UCD)
 
 For questions about the workshop or materials, please open an issue in this repository.
 
-
+---
 
 ## License
 
@@ -272,7 +282,7 @@ Amoako-Atta, C. (2026). Mapping Rice Affordability in Ghana Using GeoAI.
 GAIN Monthly Dialogue Session Workshop Materials.
 ```
 
-
+---
 
 ## Acknowledgments
 
@@ -281,13 +291,13 @@ GAIN Monthly Dialogue Session Workshop Materials.
 - **geoBoundaries** for administrative boundary data
 - **GAIN** for hosting the Monthly Dialogue Session
 
-
+---
 
 ## About GAIN
 
 The Global Alliance for Improved Nutrition (GAIN) is a Swiss-based foundation launched at the UN in 2002 to tackle the human suffering caused by malnutrition. GAIN's Monthly Dialogue Sessions provide a platform for knowledge sharing and capacity building.
 
-
+---
 
 **Last Updated:** December 2025  
 **Workshop Date:** March 2026
