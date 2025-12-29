@@ -226,12 +226,57 @@ Using artificial intelligence and geographic data together to answer location-sp
 
 After completing the workshop, consider these extensions:
 
+### Basic Extensions
 1. **Compare rice varieties:** Local vs imported rice price patterns
 2. **Add temporal dimension:** Animate price changes over time
 3. **Include other commodities:** Maize, cassava, gari, tomatoes
-4. **Combine with demographics:** Population and poverty data
-5. **Deploy publicly:** Share Gradio app via Hugging Face Spaces
-6. **Build a dashboard:** Use Streamlit or Dash for interactive exploration
+4. **Deploy publicly:** Share Gradio app via Hugging Face Spaces
+5. **Build a dashboard:** Use Streamlit or Dash for interactive exploration
+
+### Data Enrichment & Integration (Advanced)
+
+The workshop can be extended by integrating additional datasets to answer deeper policy questions. See `notebooks/03_data_enrichment_example.ipynb` for a working example and `docs/enrichment_guide.md` for a comprehensive guide.
+
+#### Recommended Data Integration Ideas
+
+**Population & Affordability Analysis:**
+- Integrate [WorldPop Ghana](https://www.worldpop.org/) population density data to identify high-impact areas
+- Calculate affordability indices: rice price relative to population density
+- Identify regions where high prices coincide with high population (priority intervention areas)
+
+**Economic Context:**
+- Add [Ghana Living Standards Survey (GLSS)](https://statsghana.gov.gh/) poverty rates by district
+- Correlate rice prices with regional poverty levels to assess affordability challenges
+- Identify vulnerable populations facing both high prices and high poverty
+
+**Market Access & Infrastructure:**
+- Overlay market locations from [OpenStreetMap](https://www.openstreetmap.org/) or [HDX](https://data.humdata.org/)
+- Analyze distance to markets and its impact on prices
+- Map road network density and its correlation with price variations
+
+**Distribution & Logistics:**
+- Integrate transportation network data to calculate distance to major ports (Tema, Takoradi)
+- Analyze how transportation costs affect inland rice prices
+- Model distribution efficiency across regions
+
+**Agricultural Production:**
+- Add crop production data from [Ghana Ministry of Food & Agriculture](https://mofa.gov.gh/)
+- Compare rice production areas with consumption/price patterns
+- Identify supply-demand mismatches
+
+**Climate & Seasonality:**
+- Incorporate rainfall data from [Ghana Meteorological Agency](http://www.meteo.gov.gh/)
+- Analyze seasonal price variations and their drivers
+- Link climate patterns to agricultural productivity and prices
+
+#### Resources for Data Enrichment
+
+A complete list of recommended datasets with download links and access instructions is available in `docs/data_sources.md`. The enrichment guide (`docs/enrichment_guide.md`) provides step-by-step instructions for integrating new data sources.
+
+**Quick Links:**
+- 📊 [Data Sources Documentation](docs/data_sources.md) - Curated list of Ghana-specific datasets
+- 📘 [Data Enrichment Guide](docs/enrichment_guide.md) - Step-by-step integration workflow
+- 📓 [Example Notebook](notebooks/03_data_enrichment_example.ipynb) - Working code demonstration
 
 ---
 
