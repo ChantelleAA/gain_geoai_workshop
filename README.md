@@ -61,7 +61,7 @@ By the end of this workshop, participants will be able to:
       README.md
       raw/
          wfp_food_prices_gha.csv                # WFP Ghana food prices (raw)
-         wfp_food_prices_gha_qc.csv             # QC'd variant (if available)
+         wfp_food_prices_gha_qc.csv             # QC'd variant
          metadata-wfp-food-prices-for-ghana.csv # Source metadata
          wfp_markets_gha.csv                    # Market locations
          geoBoundaries-GHA-ADM1.geojson         # Regional boundaries
@@ -154,7 +154,7 @@ By the end of this workshop, participants will be able to:
   - ADM1 (Regions): `geoBoundaries-GHA-ADM1.geojson`
   - ADM2 (Districts): `geoBoundaries-GHA-ADM2.geojson`
 
-**Note:** Data files are not included in this repository due to size. Please download them from the sources above.
+**Note:** Data files may be included in this repository. If not, please download them from the sources above.
 
 ---
 
@@ -164,9 +164,6 @@ By the end of this workshop, participants will be able to:
 - **Workshop Notebook** (`notebooks/01_rice_affordability_geoai_notebook.ipynb`): Complete with code, explanations, and reflection questions
 - **Student Handout** (`docs/student_handout.md`): Core concepts, guided questions, and note-taking space
 - **Presentation Slides** (`slides/GeoAI_Workshop_Slides.pptx`): Introduction and overview
-
-### For Instructors
-- **Presentation Slides** (`slides/GeoAI_Workshop_Slides.pptx`): Use to introduce the workshop
 
 ---
 
