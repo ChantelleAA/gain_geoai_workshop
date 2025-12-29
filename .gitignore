@@ -3,7 +3,8 @@
 01_geoai_rice_prices_regions.ipynb
 notebook_template.md
 generate_maps.py
-
+ignore/
+.gradio/
 # # Output directories for notebooks
 # output/
 # *.png

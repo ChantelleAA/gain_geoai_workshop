@@ -55,7 +55,7 @@ Disclaimer
 ====================================================
 With respect to the works on or made available
 through download from www.geoboundaries.org,
-we make no representations or warranties—express, implied, or statutory—as
+we make no representations or warrantiesexpress, implied, or statutoryas
 to the validity, accuracy, completeness, or fitness for a particular purpose;
 nor represent that use of such works would not infringe privately owned rights;
 nor assume any liability resulting from use of such works; and shall in no way

@@ -1,26 +1,29 @@
 # Instructor Notes: Mapping Rice Affordability in Ghana Using GeoAI
 
-**Event:** GAIN Monthly Dialogue Session – March 2026  
+**Event:** GAIN Monthly Dialogue Session  March 2026  
 **Created by:** Chantelle Amoako-Atta, AI/ML Engineer and PhD Researcher (Decarb-AI, UCD)  
 **Duration:** 2 hours  
 **Audience:** Technical participants who are comfortable with Python
+**Recommended notebook:** Use `notebooks/01_rice_affordability_geoai_notebook.ipynb` for delivering the session.
+
+**Folder conventions:** Base data in `data/raw/`, processed outputs in `data/processed/`, and notebook artifacts in `notebooks/output/`.
 
 
 
 ## High-Level Structure
 
-- **0–10 min:** Introduction, context, goals, WFP background
-- **10–30 min:** Data loading and understanding
-- **30–55 min:** GeoDataFrame and regional analysis
-- **55–80 min:** District analysis and data gaps
-- **80–100 min:** LLM and Gradio interface demo
-- **100–120 min:** Discussion, wrap-up, extensions
+- **010 min:** Introduction, context, goals, WFP background
+- **1030 min:** Data loading and understanding
+- **3055 min:** GeoDataFrame and regional analysis
+- **5580 min:** District analysis and data gaps
+- **80100 min:** LLM and Gradio interface demo
+- **100120 min:** Discussion, wrap-up, extensions
 
 
 
 ## Detailed Teaching Plan
 
-### 0–10 min: Introduction and Context
+### 010 min: Introduction and Context
 
 **Opening message:**  
 "Welcome! Today we will explore rice affordability in Ghana using real market data and GeoAI tools. By the end, you will have created maps showing spatial price patterns and built a natural language interface to query your analysis."
@@ -41,7 +44,7 @@
 
 
 
-### 10–30 min: Data Understanding
+### 1030 min: Data Understanding
 
 **Activities:**
 - Load WFP food price dataset and geoBoundaries administrative boundaries
@@ -66,7 +69,7 @@
 
 
 
-### 30–55 min: Regional Analysis (ADM1)
+### 3055 min: Regional Analysis (ADM1)
 
 **Activities:**
 - Convert price table to GeoDataFrame using point geometry
@@ -101,7 +104,7 @@
 
 
 
-### 55–80 min: District Analysis (ADM2) and Data Gaps
+### 5580 min: District Analysis (ADM2) and Data Gaps
 
 **Activities:**
 - Perform spatial join between rice observations and ADM2 districts
@@ -141,7 +144,7 @@
 
 
 
-### 80–100 min: LLM Interface with Gradio
+### 80100 min: LLM Interface with Gradio
 
 **Activities:**
 - Introduce the concept: LLM as a natural language interface to your analysis
@@ -178,7 +181,7 @@
 
 
 
-### 100–120 min: Wrap-Up and Discussion
+### 100120 min: Wrap-Up and Discussion
 
 **Reflection questions:**
 - "What did we learn about rice affordability in Ghana?"
@@ -265,8 +268,8 @@ Encourage participants to explore HDX and consider how these datasets could be c
 - Jupyter Notebook or JupyterLab
 
 **Data files:**
-- WFP Ghana food prices CSV
-- GeoBoundaries Ghana ADM1 and ADM2 shapefiles
+- WFP Ghana food prices CSV (under `data/raw/`)
+- GeoBoundaries Ghana ADM1 and ADM2 GeoJSON (under `data/raw/`)
 
 **Optional:**
 - API access for LLM (if using external service)

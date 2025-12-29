@@ -28,10 +28,10 @@ This guide provides a comprehensive workflow for enriching the base Ghana rice a
 ### Example
 
 In the base workshop, you analyze rice prices across Ghana's districts. Data enrichment would add:
-- Population density → Calculate affordability per capita
-- Poverty rates → Identify vulnerable populations
-- Market locations → Assess market access
-- Road networks → Analyze transportation costs
+- Population density  Calculate affordability per capita
+- Poverty rates  Identify vulnerable populations
+- Market locations  Assess market access
+- Road networks  Analyze transportation costs
 
 ---
 
@@ -60,7 +60,7 @@ Enrichment enables statistical analysis of relationships:
 
 ### 4. **Comprehensive Food Security Assessment**
 
-Food security isn't just about prices—it's about:
+Food security isn't just about pricesit's about:
 - Access (market proximity, transportation)
 - Availability (production, imports)
 - Utilization (nutrition outcomes)
@@ -74,19 +74,19 @@ Food security isn't just about prices—it's about:
 
 ```
 1. Define Research Question
-   ↓
+   
 2. Identify Relevant Data Sources
-   ↓
+   
 3. Acquire and Validate Data
-   ↓
+   
 4. Check Spatial Compatibility
-   ↓
+   
 5. Perform Spatial Operations
-   ↓
+   
 6. Calculate Derived Metrics
-   ↓
+   
 7. Analyze and Visualize
-   ↓
+   
 8. Interpret and Communicate
 ```
 
@@ -97,13 +97,13 @@ Food security isn't just about prices—it's about:
 **Start with a clear question** that enrichment can help answer:
 
 Good questions:
-- ✅ "Which districts have both high rice prices AND high poverty rates?"
-- ✅ "How does distance to ports correlate with rice prices?"
-- ✅ "Are densely populated areas adequately served by markets?"
+-  "Which districts have both high rice prices AND high poverty rates?"
+-  "How does distance to ports correlate with rice prices?"
+-  "Are densely populated areas adequately served by markets?"
 
 Too vague:
-- ❌ "Tell me about rice in Ghana"
-- ❌ "What's interesting about the data?"
+-  "Tell me about rice in Ghana"
+-  "What's interesting about the data?"
 
 #### Step 2: Identify Relevant Enrichment Datasets
 
@@ -118,6 +118,8 @@ For your research question, determine what additional data you need:
 | Climate impact on prices | Rainfall data (CHIRPS), NDVI |
 
 **Refer to** [`data_sources.md`](data_sources.md) for comprehensive dataset listings.
+
+Note: Base workshop data is organized under `data/raw/` and processed outputs under `data/processed/`. Notebook-generated artifacts should be saved in `notebooks/output/`.
 
 #### Step 3: Acquire and Validate Data
 
@@ -155,7 +157,7 @@ print(f"Enrichment CRS: {enrichment_data.crs}")
 # Reproject if needed
 if rice_gdf.crs != enrichment_data.crs:
     enrichment_data = enrichment_data.to_crs(rice_gdf.crs)
-    print("✓ CRS aligned")
+    print(" CRS aligned")
 ```
 
 **Common CRS for Ghana:**
@@ -308,7 +310,7 @@ axes[0].scatter(
     districts_enriched['median_price'],
     alpha=0.6
 )
-axes[0].set_xlabel('Population Density (persons/km²)')
+axes[0].set_xlabel('Population Density (persons/km)')
 axes[0].set_ylabel('Median Rice Price (GHS)')
 axes[0].set_title('Price vs Population Density')
 
@@ -467,7 +469,7 @@ axes[1].set_title('Population Density by District', fontsize=14)
 axes[1].axis('off')
 
 plt.tight_layout()
-plt.savefig('output/enrichment_maps.png', dpi=300, bbox_inches='tight')
+plt.savefig('notebooks/output/enrichment_maps.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # 8. Summary statistics
@@ -958,7 +960,7 @@ print(f"Difference is significant: {p_value < 0.05}")
 
 ### For Workshop Participants
 
-1. **Try the example notebook:** Work through `notebooks/03_data_enrichment_example.ipynb`
+1. **Try the example notebook:** Work through `notebooks/02_data_enrichment_example.ipynb`
 2. **Pick a research question:** Choose one from above or create your own
 3. **Download data:** Use `data_sources.md` to find datasets
 4. **Follow this guide:** Use the workflow and code examples

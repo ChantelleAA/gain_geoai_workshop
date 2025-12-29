@@ -1,6 +1,12 @@
 # Student Handout: Mapping Rice Affordability in Ghana Using GeoAI
+## Workshop Materials
 
-**Event:** GAIN Monthly Dialogue Session – March 2026  
+- Workshop notebook: `notebooks/01_rice_affordability_geoai_notebook.ipynb`
+- Data layout: `data/raw/` for source files, `data/processed/` for derived outputs
+- Notebook outputs: `notebooks/output/`
+
+
+**Event:** GAIN Monthly Dialogue Session  March 2026  
 **Created by:** Chantelle Amoako-Atta, AI/ML Engineer and PhD Researcher (Decarb-AI, UCD)
 
 

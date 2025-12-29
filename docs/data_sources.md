@@ -1,6 +1,7 @@
 # Data Sources for Ghana Rice Affordability Analysis
 
 This document provides a comprehensive list of datasets that can be used to enrich the base workshop analysis. All datasets are focused on Ghana and are selected for their relevance to food security, affordability, and spatial analysis.
+Folder conventions: base source files are stored under `data/raw/`, derived outputs under `data/processed/`, and notebook-generated artifacts under `notebooks/output/`.
 
 ---
 
@@ -287,8 +288,8 @@ gdf_nodes, gdf_edges = ox.graph_to_gdfs(G)
 **Access:**
 - Calculate from coordinates or use derived datasets
 - Port coordinates:
-  - Tema Port: 5.6167° N, 0.0167° E
-  - Takoradi Port: 4.8845° N, 1.7559° W
+  - Tema Port: 5.6167 N, 0.0167 E
+  - Takoradi Port: 4.8845 N, 1.7559 W
 
 **Use Cases:**
 - Calculate distance from each district to nearest port
@@ -425,7 +426,7 @@ districts['dist_to_port'] = districts[['dist_to_tema', 'dist_to_takoradi']].min(
 
 **Key Variables:**
 - Precipitation (mm)
-- Temperature (°C)
+- Temperature (C)
 - Drought indices
 - Growing season indicators
 
@@ -529,7 +530,7 @@ district_rainfall = rainfall.groupby('district').mean()
 **Coverage:**
 - Daily, pentadal, monthly
 - 1981-present
-- 0.05° resolution (~5.5 km)
+- 0.05 resolution (~5.5 km)
 
 **Key Variables:**
 - Precipitation (mm)

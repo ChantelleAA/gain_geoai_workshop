@@ -33,7 +33,7 @@ You need **Python 3.10 or higher**. If you don't have it:
 
 ```bash
 # Navigate to workshop folder
-cd path/to/geoai-rice-affordability-ghana
+cd gain_geoai_workshop
 
 # Create virtual environment
 python -m venv venv
@@ -74,21 +74,24 @@ This will install:
 ### WFP Food Prices
 1. Visit: https://data.humdata.org/dataset/wfp-food-prices-for-ghana
 2. Download the CSV file
-3. Save as `data/wfp_food_prices_gha.csv`
+3. Save as `data/raw/wfp_food_prices_gha.csv`
 
 ### Ghana Boundaries
 1. Visit: https://www.geoboundaries.org/
 2. Search for "Ghana"
 3. Download:
-   - ADM1 (Regions) as GeoJSON  save as `data/geoBoundaries-GHA-ADM1.geojson`
-   - ADM2 (Districts) as GeoJSON  save as `data/geoBoundaries-GHA-ADM2.geojson`
+   - ADM1 (Regions) as GeoJSON  save as `data/raw/geoBoundaries-GHA-ADM1.geojson`
+   - ADM2 (Districts) as GeoJSON  save as `data/raw/geoBoundaries-GHA-ADM2.geojson`
 
 ### Your data folder should look like:
 ```
 data/
- wfp_food_prices_gha.csv
- geoBoundaries-GHA-ADM1.geojson
- geoBoundaries-GHA-ADM2.geojson
+   raw/
+      wfp_food_prices_gha.csv
+      geoBoundaries-GHA-ADM1.geojson
+      geoBoundaries-GHA-ADM2.geojson
+   processed/
+      regions_with_rice_prices.geojson
 ```
 
 
@@ -103,7 +106,7 @@ jupyter notebook
 
 This should open in your browser. Navigate to:
 ```
-notebooks/workshop_notebook.ipynb
+notebooks/01_rice_affordability_geoai_notebook.ipynb
 ```
 
 Run the first few cells to verify everything works. You should see:
@@ -119,10 +122,10 @@ Before the workshop, make sure you have:
 - [ ] Python 3.10+ installed
 - [ ] Virtual environment created and activated (optional but recommended)
 - [ ] All libraries installed via requirements.txt
-- [ ] WFP food price CSV downloaded and in `data/` folder
-- [ ] Ghana ADM1 and ADM2 boundary files downloaded and in `data/` folder
+- [ ] WFP food price CSV downloaded and in `data/raw/`
+- [ ] Ghana ADM1 and ADM2 boundary files downloaded and in `data/raw/`
 - [ ] Jupyter Notebook launched successfully
-- [ ] Workshop notebook opens without errors
+- [ ] Workshop notebook opens without errors (`notebooks/01_rice_affordability_geoai_notebook.ipynb`)
 
 
 
@@ -152,7 +155,7 @@ If you have extra time before the workshop:
 
 1. **Read the student handout** (`docs/student_handout.md`)
 2. **Review the slides** (`slides/GeoAI_Workshop_Slides.pptx`)
-3. **Skim the workshop notebook** to see what we'll cover
+3. **Skim the workshop notebook** (`notebooks/01_rice_affordability_geoai_notebook.ipynb`) to see what we'll cover
 
 
 

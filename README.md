@@ -2,12 +2,12 @@
 
 ![Workshop Banner](images/workshop-banner.png)
 
-**GAIN Monthly Dialogue Session – March 2026**  
+**GAIN Monthly Dialogue Session  March 2026**  
 Created by Chantelle Amoako-Atta, AI/ML Engineer and PhD Researcher (Decarb-AI, UCD)
 
 ---
 
-> **⚠️ DRAFT STATUS:** These materials are currently in development for the March 2026 workshop. Content may change before the workshop date.
+> ** DRAFT STATUS:** These materials are currently in development for the March 2026 workshop. Content may change before the workshop date.
 
 ---
 
@@ -46,30 +46,48 @@ By the end of this workshop, participants will be able to:
 ## Repository Structure
 
 ```
-gain_geoai_workshop/
-├── README.md                          # This file
-├── images/                            # Images for README
-│   ├── workshop-banner.png
-│   ├── workflow-diagram.png
-│   ├── regional-map-example.png
-│   ├── district-map-example.png
-│   ├── ghana-context-map.png
-│   ├── table-to-map.png
-│   ├── tech-stack.png
-│   └── gradio-interface.png
-├── data/                              # Data files (see Data Sources section)
-│   ├── wfp_food_prices_gha.csv       # WFP Ghana food prices
-│   ├── geoBoundaries-GHA-ADM1.geojson # Regional boundaries
-│   └── geoBoundaries-GHA-ADM2.geojson # District boundaries
-├── notebooks/
-│   ├── workshop_notebook.ipynb        # Main workshop notebook
-│   └── 03_data_enrichment_example.ipynb # Extension exercise
-├── slides/
-│   └── GeoAI_Workshop_Slides.pptx    # Presentation slides
-├── docs/
-│   ├── student_handout.md             # Student reference guide
-│   └── quick_start.md                 # Pre-workshop setup instructions
-└── requirements.txt                   # Python dependencies
+ gain_geoai_workshop/
+   README.md                          # This file
+   images/                            # Images for README
+      workshop-banner.png
+      workflow-diagram.png
+      regional-map-example.png
+      district-map-example.png
+      ghana-context-map.png
+      table-to-map.png
+      tech-stack.png
+      gradio-interface.png
+   data/
+      README.md
+      raw/
+         wfp_food_prices_gha.csv                # WFP Ghana food prices (raw)
+         wfp_food_prices_gha_qc.csv             # QC'd variant (if available)
+         metadata-wfp-food-prices-for-ghana.csv # Source metadata
+         wfp_markets_gha.csv                    # Market locations
+         geoBoundaries-GHA-ADM1.geojson         # Regional boundaries
+         geoBoundaries-GHA-ADM2.geojson         # District boundaries
+         geoBoundaries-GHA-ADM2-all/            # Shapefiles and metadata
+            geoBoundaries-GHA-ADM2.geojson
+            geoBoundaries-GHA-ADM2.shp
+            geoBoundaries-GHA-ADM2.dbf
+            ...
+      processed/
+         regions_with_rice_prices.geojson       # Derived outputs
+   notebooks/
+      README.md
+      01_rice_affordability_geoai_notebook.ipynb  # Main workshop notebook
+      02_data_enrichment_example.ipynb             # Extension exercise
+      output/                                      # Notebook-generated artifacts
+   slides/
+      GeoAI_Workshop_Slides.pptx               # Presentation slides
+   docs/
+      data_sources.md
+      enrichment_guide.md
+      quick_start.md
+      student_handout.md
+      instructor_notes/
+         instructor_notes.md
+   requirements.txt                           # Python dependencies
 ```
 
 ---
@@ -109,7 +127,11 @@ gain_geoai_workshop/
    ```
 
 6. **Open the workshop notebook:**
-   Navigate to `notebooks/workshop_notebook.ipynb`
+   Open `notebooks/01_rice_affordability_geoai_notebook.ipynb`.
+
+---
+
+ 
 
 ---
 
@@ -144,7 +166,7 @@ gain_geoai_workshop/
 ## Workshop Materials
 
 ### For Participants
-- **Workshop Notebook** (`notebooks/workshop_notebook.ipynb`): Complete with code, explanations, and reflection questions
+- **Workshop Notebook** (`notebooks/01_rice_affordability_geoai_notebook.ipynb`): Complete with code, explanations, and reflection questions
 - **Student Handout** (`docs/student_handout.md`): Core concepts, guided questions, and note-taking space
 - **Presentation Slides** (`slides/GeoAI_Workshop_Slides.pptx`): Introduction and overview
 
@@ -184,12 +206,12 @@ pip install -r requirements.txt
 
 | Time | Activity | Description |
 |------|----------|-------------|
-| 0–10 min | Introduction | Context, WFP background, learning outcomes |
-| 10–30 min | Data Loading | Explore datasets, filter rice, validate coordinates |
-| 30–55 min | Regional Analysis | Create GeoDataFrame, spatial joins, ADM1 choropleth |
-| 55–80 min | District Analysis | ADM2 mapping, identify data gaps |
-| 80–100 min | LLM Interface | Build Gradio app for natural language queries |
-| 100–120 min | Discussion | Reflections, applications, extensions |
+| 010 min | Introduction | Context, WFP background, learning outcomes |
+| 1030 min | Data Loading | Explore datasets, filter rice, validate coordinates |
+| 3055 min | Regional Analysis | Create GeoDataFrame, spatial joins, ADM1 choropleth |
+| 5580 min | District Analysis | ADM2 mapping, identify data gaps |
+| 80100 min | LLM Interface | Build Gradio app for natural language queries |
+| 100120 min | Discussion | Reflections, applications, extensions |
 
 
 
@@ -237,7 +259,7 @@ After completing the workshop, consider these extensions:
 
 ### Data Enrichment & Integration (Advanced)
 
-The workshop can be extended by integrating additional datasets to answer deeper policy questions. See `notebooks/03_data_enrichment_example.ipynb` for a working example and `docs/enrichment_guide.md` for a comprehensive guide.
+The workshop can be extended by integrating additional datasets to answer deeper policy questions. See `notebooks/02_data_enrichment_example.ipynb` for a working example and `docs/enrichment_guide.md` for a comprehensive guide.
 
 #### Recommended Data Integration Ideas
 
@@ -276,9 +298,9 @@ The workshop can be extended by integrating additional datasets to answer deeper
 A complete list of recommended datasets with download links and access instructions is available in `docs/data_sources.md`. The enrichment guide (`docs/enrichment_guide.md`) provides step-by-step instructions for integrating new data sources.
 
 **Quick Links:**
-- 📊 [Data Sources Documentation](docs/data_sources.md) - Curated list of Ghana-specific datasets
-- 📘 [Data Enrichment Guide](docs/enrichment_guide.md) - Step-by-step integration workflow
-- 📓 [Example Notebook](notebooks/03_data_enrichment_example.ipynb) - Working code demonstration
+-  [Data Sources Documentation](docs/data_sources.md) - Curated list of Ghana-specific datasets
+-  [Data Enrichment Guide](docs/enrichment_guide.md) - Step-by-step integration workflow
+-  [Example Notebook](notebooks/02_data_enrichment_example.ipynb) - Working code demonstration
 
 ---
 
