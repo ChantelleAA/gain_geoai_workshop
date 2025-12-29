@@ -1,0 +1,14 @@
+name: geoai-workshop
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - geopandas
+  - pandas
+  - matplotlib
+  - folium
+  - shapely
+  - pyproj
+  - jupyter
+  - notebook
+  - requests
