@@ -3,3 +3,16 @@
 01_geoai_rice_prices_regions.ipynb
 notebook_template.md
 generate_maps.py
+
+# Output directories for notebooks
+output/
+*.png
+*.jpg
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
