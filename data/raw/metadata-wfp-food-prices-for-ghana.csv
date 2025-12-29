@@ -1,0 +1,55 @@
+Field,Label,Value
+id,Dataset ID,626e809c-c4fc-467b-a60c-129acb5e9320
+title,Title of Dataset,Ghana - Food Prices
+name,Dataset URL,wfp-food-prices-for-ghana
+notes,Description,"This dataset contains Food Prices data for Ghana, sourced from the World Food Programme Price Database. The World Food Programme Price Database covers foods such as maize, rice, beans, fish, and sugar for 98 countries and some 3000 markets. It is updated weekly but contains to a large extent monthly data. The data goes back as far as 1992 for a few countries, although many countries started reporting from 2003 or thereafter."
+dataset_source,Source,"FPMA, MOFA, Marketing Services Unit, SRID (MOFA) via FAO: GIEWS"
+organization,Contributor,WFP - World Food Programme
+dataset_date,Reference Period,[2006-01-15T00:00:00 TO 2023-07-15T23:59:59]
+last_modified,Updated,2025-12-28T09:42:03.696355
+data_update_frequency,Expected Update Frequency,Every month
+groups,Location,Ghana
+license_title,License,Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO)
+methodology,Methodology,Registry
+methodology_other,Define Methodology,
+caveats,Caveats/Comments,"Although the frequency of updates is set to every month, updates may occur more or less frequently"
+tags,Tags,"economics, food security, hxl, indicators, markets"
+resource_1_created,Created,2018-09-26T15:37:16.374175
+resource_1_description,Description,Food prices data with HXL tags
+resource_1_format,File Format,CSV
+resource_1_download_url,Download URL,https://data.humdata.org/dataset/626e809c-c4fc-467b-a60c-129acb5e9320/resource/e877350b-146f-4fa7-8690-db9605eea78c/download/wfp_food_prices_gha.csv
+resource_1_id,Resource ID,e877350b-146f-4fa7-8690-db9605eea78c
+resource_1_last_modified,Updated,2025-12-28T09:42:03.185776
+resource_1_metadata_modified,Metadata Updated,2025-12-28T09:42:11.029421
+resource_1_microdata,Microdata,False
+resource_1_dataset_id,Dataset ID,626e809c-c4fc-467b-a60c-129acb5e9320
+resource_1_resource_type,Resource Type,file.upload
+resource_1_name,Resource Name,Ghana - Food Prices
+resource_1_mimetype,MIME Type,
+resource_1_size,Size,3.4M
+resource_2_created,Created,2025-05-06T22:45:30.449216
+resource_2_description,Description,Markets data with HXL tags
+resource_2_format,File Format,CSV
+resource_2_download_url,Download URL,https://data.humdata.org/dataset/626e809c-c4fc-467b-a60c-129acb5e9320/resource/e674838c-87ba-4c7c-afc5-614226842768/download/wfp_markets_gha.csv
+resource_2_id,Resource ID,e674838c-87ba-4c7c-afc5-614226842768
+resource_2_last_modified,Updated,2025-11-16T11:10:09.713834
+resource_2_metadata_modified,Metadata Updated,2025-11-16T11:10:09.820771
+resource_2_microdata,Microdata,False
+resource_2_dataset_id,Dataset ID,626e809c-c4fc-467b-a60c-129acb5e9320
+resource_2_resource_type,Resource Type,file.upload
+resource_2_name,Resource Name,Ghana - Markets
+resource_2_mimetype,MIME Type,text/csv
+resource_2_size,Size,4.8K
+resource_3_created,Created,2018-09-26T15:37:16.374186
+resource_3_description,Description,Food prices QuickCharts data with HXL tags
+resource_3_format,File Format,CSV
+resource_3_download_url,Download URL,https://data.humdata.org/dataset/626e809c-c4fc-467b-a60c-129acb5e9320/resource/ca6df96f-f6a8-4714-8dea-4b916b485530/download/wfp_food_prices_gha_qc.csv
+resource_3_id,Resource ID,ca6df96f-f6a8-4714-8dea-4b916b485530
+resource_3_last_modified,Updated,2025-12-28T09:42:03.696355
+resource_3_metadata_modified,Metadata Updated,2025-12-28T09:42:10.577933
+resource_3_microdata,Microdata,False
+resource_3_dataset_id,Dataset ID,626e809c-c4fc-467b-a60c-129acb5e9320
+resource_3_resource_type,Resource Type,file.upload
+resource_3_name,Resource Name,QuickCharts: Ghana - Food Prices
+resource_3_mimetype,MIME Type,
+resource_3_size,Size,53.6K
