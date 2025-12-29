@@ -7,6 +7,10 @@ Created by Chantelle Amoako-Atta, AI/ML Engineer and PhD Researcher (Decarb-AI, 
 
 ---
 
+> **⚠️ DRAFT STATUS:** These materials are currently in development for the March 2026 workshop. Content may change before the workshop date.
+
+---
+
 ## Overview
 
 This repository contains materials for a 2-hour hands-on GeoAI workshop that uses real Ghanaian market data to explore spatial affordability patterns for rice. Participants will learn to:
@@ -58,15 +62,14 @@ gain_geoai_workshop/
 │   ├── geoBoundaries-GHA-ADM1.geojson # Regional boundaries
 │   └── geoBoundaries-GHA-ADM2.geojson # District boundaries
 ├── notebooks/
-│   └── complete_workshop_notebook.ipynb # Main workshop notebook
+│   ├── workshop_notebook.ipynb        # Main workshop notebook
+│   └── 03_data_enrichment_example.ipynb # Extension exercise
 ├── slides/
 │   └── GeoAI_Workshop_Slides.pptx    # Presentation slides
 ├── docs/
-│   ├── instructor_notes.md            # Teaching guide for instructors
 │   ├── student_handout.md             # Student reference guide
 │   └── quick_start.md                 # Pre-workshop setup instructions
-├── requirements.txt                   # Python dependencies
-└── generate_ghana_maps.py             # Script to generate map images
+└── requirements.txt                   # Python dependencies
 ```
 
 ---
@@ -106,7 +109,7 @@ gain_geoai_workshop/
    ```
 
 6. **Open the workshop notebook:**
-   Navigate to `notebooks/complete_workshop_notebook.ipynb`
+   Navigate to `notebooks/workshop_notebook.ipynb`
 
 ---
 
@@ -141,12 +144,11 @@ gain_geoai_workshop/
 ## Workshop Materials
 
 ### For Participants
-- **Workshop Notebook** (`notebooks/complete_workshop_notebook.ipynb`): Complete with code, explanations, and reflection questions
+- **Workshop Notebook** (`notebooks/workshop_notebook.ipynb`): Complete with code, explanations, and reflection questions
 - **Student Handout** (`docs/student_handout.md`): Core concepts, guided questions, and note-taking space
 - **Presentation Slides** (`slides/GeoAI_Workshop_Slides.pptx`): Introduction and overview
 
 ### For Instructors
-- **Instructor Notes** (`docs/instructor_notes.md`): Detailed teaching plan with timing, engagement strategies, and troubleshooting
 - **Presentation Slides** (`slides/GeoAI_Workshop_Slides.pptx`): Use to introduce the workshop
 
 ---
