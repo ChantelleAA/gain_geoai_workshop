@@ -287,7 +287,7 @@ gdf_nodes, gdf_edges = ox.graph_to_gdfs(G)
 **Access:**
 - Calculate from coordinates or use derived datasets
 - Port coordinates:
-  - Tema Port: 5.6167° N, 0.0167° W
+  - Tema Port: 5.6167° N, 0.0167° E
   - Takoradi Port: 4.8845° N, 1.7559° W
 
 **Use Cases:**
@@ -301,8 +301,8 @@ gdf_nodes, gdf_edges = ox.graph_to_gdfs(G)
 from shapely.geometry import Point
 import geopandas as gpd
 
-# Port locations
-tema_port = Point(-0.0167, 5.6167)
+# Port locations (longitude, latitude)
+tema_port = Point(0.0167, 5.6167)
 takoradi_port = Point(-1.7559, 4.8845)
 
 # Calculate distance from each district centroid to nearest port

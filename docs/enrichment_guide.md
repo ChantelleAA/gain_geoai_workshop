@@ -9,11 +9,10 @@ This guide provides a comprehensive workflow for enriching the base Ghana rice a
 1. [What is Data Enrichment?](#what-is-data-enrichment)
 2. [Why Enrich Spatial Data?](#why-enrich-spatial-data)
 3. [The Enrichment Workflow](#the-enrichment-workflow)
-4. [Step-by-Step Tutorial](#step-by-step-tutorial)
-5. [Code Examples](#code-examples)
-6. [Common Challenges & Solutions](#common-challenges--solutions)
-7. [Best Practices](#best-practices)
-8. [Example Research Questions](#example-research-questions)
+4. [Code Examples](#code-examples)
+5. [Common Challenges & Solutions](#common-challenges--solutions)
+6. [Best Practices](#best-practices)
+7. [Example Research Questions](#example-research-questions)
 
 ---
 
