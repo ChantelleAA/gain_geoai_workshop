@@ -4,10 +4,10 @@
 notebook_template.md
 generate_maps.py
 
-# Output directories for notebooks
-output/
-*.png
-*.jpg
+# # Output directories for notebooks
+# output/
+# *.png
+# *.jpg
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
