@@ -14,11 +14,6 @@ data/
 		wfp_markets_gha.csv
 		geoBoundaries-GHA-ADM1.geojson
 		geoBoundaries-GHA-ADM2.geojson
-		geoBoundaries-GHA-ADM2-all/
-			geoBoundaries-GHA-ADM2.geojson
-			geoBoundaries-GHA-ADM2.shp
-			geoBoundaries-GHA-ADM2.dbf
-			...
 	processed/
 		regions_with_rice_prices.geojson
 ```

@@ -13,6 +13,10 @@ ignore/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
+# Data files
+geoBoundaries-GHA-ADM2-all/
+geoBoundaries-GHA-ADM2-all.zip
+
 # Python cache
 __pycache__/
 *.pyc

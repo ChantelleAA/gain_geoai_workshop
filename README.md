@@ -66,11 +66,6 @@ By the end of this workshop, participants will be able to:
          wfp_markets_gha.csv                    # Market locations
          geoBoundaries-GHA-ADM1.geojson         # Regional boundaries
          geoBoundaries-GHA-ADM2.geojson         # District boundaries
-         geoBoundaries-GHA-ADM2-all/            # Shapefiles and metadata
-            geoBoundaries-GHA-ADM2.geojson
-            geoBoundaries-GHA-ADM2.shp
-            geoBoundaries-GHA-ADM2.dbf
-            ...
       processed/
          regions_with_rice_prices.geojson       # Derived outputs
    notebooks/
