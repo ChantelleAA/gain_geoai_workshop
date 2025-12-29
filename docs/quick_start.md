@@ -103,7 +103,7 @@ jupyter notebook
 
 This should open in your browser. Navigate to:
 ```
-notebooks/complete_workshop_notebook.ipynb
+notebooks/workshop_notebook.ipynb
 ```
 
 Run the first few cells to verify everything works. You should see:
